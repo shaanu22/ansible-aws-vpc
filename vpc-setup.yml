@@ -25,7 +25,7 @@
         region: "{{region}}" 
         az: "{{zone1}}" 
         state: "{{state}}"
-        cidr_block: "{{PubSub1Cidr}}" 
+        cidr: "{{PubSub1Cidr}}" 
         map_public: yes
         tags: 
           Name: dev-pubsub1 
