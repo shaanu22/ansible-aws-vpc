@@ -27,6 +27,6 @@
         state: "{{state}}"
         cidr_block: "{{PubSub1Cidr}}" 
         map_public: yes
-        resource_tags: 
+        tags: 
           Name: dev-pubsub1 
       register: pubsub1_out
