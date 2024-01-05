@@ -123,11 +123,11 @@
         region: "{{region}}"
         if_exist_do_not_create: true
         tags:
-          Name: dev_NATGW
+          Name: "dev_NATGW"
       register: NATGW_out
 
     - name: Set up private subnet route table
-      amazon.aws.ec2_vpc_route_table:
+      ec2_vpc_route_table:
         vpc_id: "{{vpcout.vpc.id}}"
         region: "{{region}}"
         tags:
