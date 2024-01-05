@@ -122,6 +122,8 @@
         wait: yes
         region: "{{region}}"
         if_exist_do_not_create: true
+        tags:
+          Name: dev_NATGW
       register: NATGW_out
 
     - name: Set up private subnet route table
