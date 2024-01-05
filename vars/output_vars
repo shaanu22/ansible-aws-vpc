@@ -1,0 +1,11 @@
+vpcid: vpc-08e43a63f4aac3258
+pubsub1id: subnet-03cc26aa03949fe3b
+pubsub2id: subnet-0458f5aa8cc3e1c19
+pubsub3id: subnet-016eb2699093854ee
+privsub1id: subnet-05ea2f31cb8b19132
+privsub2id: subnet-04800cafa3dd7652e
+privsub3id: subnet-04309847b6f5486a8
+igwid: igw-014521c3b98e35d35
+pubRTid: rtb-0626731c517ff0f58NATGWid: nat-07afabc0bd1ece14c
+PrivRTid: rtb-022b54b769b695997
+cacheable: yes
