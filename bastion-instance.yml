@@ -5,10 +5,10 @@
   gather_facts: False
   tasks: 
     - name: Import VPC setup Variables 
-      include_vars: ../vars/bastion_setup
+      include_vars: ./vars/bastion_setup
 
     - name: Import VPC setup Variable 
-      include_vars: ../vars/output_vars
+      include_vars: ./vars/output_vars
 
     - name: Create dev ec2 key
       ec2_key: 
@@ -19,7 +19,7 @@
     - name: Save private key into file bastion-key.pem
       copy: 
         content: "{{ key_out.key.private_key }}" 
-        dest: "../dev-key.pem" 
+        dest: "./dev-key.pem" 
         mode: 0600 
       when: key_out.changed 
 
